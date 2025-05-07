@@ -1,0 +1,12 @@
+# Azure Functions dependencies
+azure-functions>=1.12.0,<2.0.0
+azure-storage-blob>=12.14.0,<13.0.0
+
+# Spotify API dependencies
+spotipy>=2.22.0,<3.0.0
+
+# Data processing dependencies
+pandas>=1.5.0,<2.0.0
+
+# General dependencies
+python-dotenv>=0.21.0,<1.0.0
