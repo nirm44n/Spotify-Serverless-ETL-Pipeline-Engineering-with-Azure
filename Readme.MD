@@ -85,7 +85,7 @@ Create a `local.settings.json` file in the SpotifyETL directory:
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "AzureWebJobsStorage": "YOUR_STORAGE_CONNECTION_STRING",
+    "STORAGE_CONNNECTION_STRING": "YOUR_STORAGE_CONNECTION_STRING",
     "CLIENT_ID": "YOUR_SPOTIFY_CLIENT_ID",
     "CLIENT_SECRET": "YOUR_SPOTIFY_CLIENT_SECRET",
     "CONTAINER_NAME": "raw"
@@ -215,7 +215,7 @@ When a new file is added to `raw/to_be_processed`:
 ```
 Spotify-Serverless-ETL-Pipeline-Engineering-with-Azure/
 ├── SpotifyETL/
-│   ├── __init__.py              # Function app initialization
+│   ├── function_app.py          # Function app initialization
 │   ├── spotifyextract.py        # Extract function
 │   ├── spotifytransform.py      # Transform function
 │   ├── requirements.txt         # Python dependencies
